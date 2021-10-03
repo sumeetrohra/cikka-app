@@ -2,7 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App: React.FC = () => {
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface IProps {
+
+}
+
+const App: React.FC<IProps> = () => {
   return (
     <div className="App">
       <header className="App-header">
