@@ -27,14 +27,12 @@ const ThemeProviderCustom: React.FC = (props) => {
   );
 
   return (
-    <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <ColorModeContext.Provider value={colorMode.toggleColorMode}>
-          <GlobalStyles />
-          {props.children}
-        </ColorModeContext.Provider>
-      </ThemeProvider>
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <ColorModeContext.Provider value={colorMode.toggleColorMode}>
+        <GlobalStyles />
+        {props.children}
+      </ColorModeContext.Provider>
+    </ThemeProvider>
   );
 };
 
